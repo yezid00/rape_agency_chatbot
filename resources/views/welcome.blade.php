@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.css">
     <script>
         var botmanWidget = {
-            aboutText: 'ssdsd',
+            aboutText: 'HNGi7 Task',
             title:'Rape Agencies',
             mainColor:'#4f6088',
             bubbleBackground:'#ff76f4',
