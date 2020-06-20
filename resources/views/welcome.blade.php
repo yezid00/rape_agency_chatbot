@@ -19,10 +19,13 @@
     <body>
     </body>
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.css">
     <script>
         var botmanWidget = {
             aboutText: 'ssdsd',
+            title:'Rape Agencies',
+            mainColor:'#4f6088',
+            bubbleBackground:'#ff76f4',
             introMessage: "✋ Hi! You can get agencies that help rape victims below"
         };
     </script>
