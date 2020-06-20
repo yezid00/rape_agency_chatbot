@@ -12,7 +12,7 @@ class BotManController extends Controller
     {
         $botman = app('botman');
         $botman->hears('{message}', function($botman,$message){
-        	if($message == 'rape agencies' || 'agencies'){
+        	if($message == 'rape agencies' || 'Rape agencies'){
         		$this->getAgency($botman);
         	}
         });
@@ -56,7 +56,7 @@ class BotManController extends Controller
         $botman->ask('send "rape agencies" to get list of all available agencies', function(Answer $answer) {
             $this->say('SERP:+2348095967000  WARIF:+2348092100009');
 
-           	$this->say('Hope that was helpful');
+           	//$this->say('Hope that was helpful');
         });
     }
     /*
