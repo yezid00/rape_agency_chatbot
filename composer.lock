@@ -64,34 +64,32 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/botman/botman.git",
-                "reference": "a3da1d66da62392b70c700c0f5583092be55a3ba"
+                "reference": "2495a60615404604059ee552bf5a57353d07df25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/botman/botman/zipball/a3da1d66da62392b70c700c0f5583092be55a3ba",
-                "reference": "a3da1d66da62392b70c700c0f5583092be55a3ba",
+                "url": "https://api.github.com/repos/botman/botman/zipball/2495a60615404604059ee552bf5a57353d07df25",
+                "reference": "2495a60615404604059ee552bf5a57353d07df25",
                 "shasum": ""
             },
             "require": {
-                "mpociot/pipeline": "^1.0",
+                "mpociot/pipeline": "^1.0.2",
                 "opis/closure": "^2.3 || ^3.0",
                 "php": ">=7.1",
                 "psr/container": "^1.0",
                 "react/socket": "~1.0",
                 "spatie/macroable": "^1.0",
                 "symfony/http-foundation": "^2.8 || ^3.0 || ^4.0 || ^5.0",
-                "tightenco/collect": "~5.0 || ~6.0"
+                "tightenco/collect": "^5.0 || ^6.0 || ^7.0 || ^8.0"
             },
             "require-dev": {
                 "codeigniter/framework": "~3.0",
                 "doctrine/cache": "^1.6",
                 "ext-curl": "*",
-                "illuminate/support": "^5.4",
                 "mockery/mockery": "^1.1",
-                "orchestra/testbench": "~3.0",
-                "phpunit/phpunit": "~6.4",
-                "sllh/php-cs-fixer-styleci-bridge": "^2.1",
-                "symfony/cache": "^3.1"
+                "orchestra/testbench": "^3.4 || ^4.0 || ^5.0 || ^6.0",
+                "phpunit/phpunit": "^6.0 || ^7.0 || ^8.0",
+                "symfony/cache": "^3.4.35 || ^4.3.7 || ^5.0"
             },
             "suggest": {
                 "doctrine/cache": "Use any Doctrine cache driver for cache",
@@ -133,7 +131,7 @@
                 "bot",
                 "chatbot"
             ],
-            "time": "2020-05-29T14:47:18+00:00"
+            "time": "2021-04-14T18:12:16+00:00"
         },
         {
             "name": "botman/driver-web",
@@ -1242,31 +1240,31 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.69",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "7106f78428a344bc4f643c233a94e48795f10967"
+                "reference": "f3ad69181b8afed2c9edf7be5a2918144ff4ea32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7106f78428a344bc4f643c233a94e48795f10967",
-                "reference": "7106f78428a344bc4f643c233a94e48795f10967",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f3ad69181b8afed2c9edf7be5a2918144ff4ea32",
+                "reference": "f3ad69181b8afed2c9edf7be5a2918144ff4ea32",
                 "shasum": ""
             },
             "require": {
                 "ext-fileinfo": "*",
-                "php": ">=5.5.9"
+                "league/mime-type-detection": "^1.3",
+                "php": "^7.2.5 || ^8.0"
             },
             "conflict": {
                 "league/flysystem-sftp": "<1.0.6"
             },
             "require-dev": {
-                "phpspec/phpspec": "^3.4",
-                "phpunit/phpunit": "^5.7.26"
+                "phpspec/prophecy": "^1.11.1",
+                "phpunit/phpunit": "^8.5.8"
             },
             "suggest": {
-                "ext-fileinfo": "Required for MimeType",
                 "ext-ftp": "Allows you to use FTP server storage",
                 "ext-openssl": "Allows you to use FTPS server storage",
                 "league/flysystem-aws-s3-v2": "Allows you to use S3 storage with AWS SDK v2",
@@ -1328,7 +1326,59 @@
                     "type": "other"
                 }
             ],
-            "time": "2020-05-18T15:13:39+00:00"
+            "time": "2021-06-23T21:56:05+00:00"
+        },
+        {
+            "name": "league/mime-type-detection",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/mime-type-detection.git",
+                "reference": "3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3",
+                "reference": "3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "phpstan/phpstan": "^0.12.68",
+                "phpunit/phpunit": "^8.5.8 || ^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\MimeTypeDetection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frankdejonge.nl"
+                }
+            ],
+            "description": "Mime-type detection for Flysystem",
+            "funding": [
+                {
+                    "url": "https://github.com/frankdejonge",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-18T20:58:21+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -4663,12 +4713,12 @@
             "version": "v6.18.16",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tightenco/collect.git",
+                "url": "https://github.com/tighten/collect.git",
                 "reference": "b5c4bbefa020729d580932f8e36b11cd437a1b2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/b5c4bbefa020729d580932f8e36b11cd437a1b2b",
+                "url": "https://api.github.com/repos/tighten/collect/zipball/b5c4bbefa020729d580932f8e36b11cd437a1b2b",
                 "reference": "b5c4bbefa020729d580932f8e36b11cd437a1b2b",
                 "shasum": ""
             },
@@ -5253,6 +5303,7 @@
                 "faker",
                 "fixtures"
             ],
+            "abandoned": true,
             "time": "2019-12-12T13:22:17+00:00"
         },
         {
@@ -6066,6 +6117,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -6896,12 +6948,12 @@
             "version": "1.9.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "9dc4f203e36f2b486149058bade43c851dd97451"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/9dc4f203e36f2b486149058bade43c851dd97451",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/9dc4f203e36f2b486149058bade43c851dd97451",
                 "reference": "9dc4f203e36f2b486149058bade43c851dd97451",
                 "shasum": ""
             },
